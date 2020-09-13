@@ -1,0 +1,182 @@
+/* general styles */
+/* ===================================================== */
+body,
+html {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    overflow: auto;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+#body {
+    height: 100vh;
+}
+h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 0.15em;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+/* ===================================================== */
+
+/* game mode styles, win statement and lives*/
+/* ===================================================== */
+#game-info-container {
+    margin: 0;
+    background-color: #0099ff;
+    padding: 1em 0 0.5em 0;
+    height: 20vh;
+    overflow: auto;
+}
+#game-modes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 2em;
+}
+ul li {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+#win-statement {
+    visibility: hidden;
+}
+.heart-icon {
+    color: rgb(255, 105, 180);
+}
+button {
+    box-shadow: none;
+    outline: none;
+    width: 5em;
+    height: 2.5em;
+    transition: 0.25s linear;
+    cursor: pointer;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+.colorbutton-0 {
+    background-color: white;
+    color: black;
+}
+.colorbutton-1,
+li:nth-child(1) button:hover {
+    background-color: rgb(51, 165, 50);
+    color: white;
+}
+.colorbutton-2,
+li:nth-child(2) button:hover {
+    background-color: rgb(255, 255, 0);
+}
+.colorbutton-3,
+li:nth-child(3) button:hover {
+    background-color: rgb(204, 50, 50);
+    color: white;
+}
+.colorbutton-4,
+li:nth-child(4) button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* ===================================================== */
+
+/* colour box styles and new game button*/
+/* ===================================================== */
+#colours-outer-container {
+    background-color: black;
+    padding: 1em 0 0 0;
+    height: 80vh;
+    overflow: auto;
+}
+#colours-container {
+    display: grid;
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1em;
+    justify-content: center;
+}
+.box {
+    border: 3px solid white;
+    border-radius: 1em;
+}
+.box:hover {
+    cursor: pointer;
+}
+#generate-colour-button {
+    margin: 1em 0 0 0;
+    width: 10em;
+    height: 3.5em;
+    transition: 0.25s linear;
+    box-shadow: none;
+    outline: none;
+}
+#generate-colour-button:hover {
+    background-color: rgb(51, 165, 50);
+    color: white;
+    cursor: pointer;
+}
+/* ===================================================== */
+
+@media only screen and (min-width: 650px) {
+    #game-info-container {
+        height: 25vh;
+    }
+    #colours-outer-container {
+        height: 75vh;
+    }
+    #colours-container {
+        height: 60vh;
+    }
+    #colours-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    #game-info-container {
+        height: 25vh;
+    }
+    #colours-outer-container {
+        height: 75vh;
+    }
+    #colours-container {
+        height: 55vh;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.75em;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    #colours-container {
+        width: 80%;
+    }
+}
