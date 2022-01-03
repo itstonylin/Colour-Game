@@ -1,6 +1,6 @@
 # GUESS THE COLOUR GAME
 
-## Background Knowledge Needed:
+## Background:
 
 This game uses the RGB colour model. RGB stands for **red**, **green** and **blue**. The syntax is `rgb(num, num, num)` where num is a number from **0** to **255**, where 255 is either red, green or blue depending on the numbers position in the syntax. 
 
@@ -18,7 +18,7 @@ This game uses the RGB colour model. RGB stands for **red**, **green** and **blu
 
 ## Description:
 
-In each game there are 8 coloured boxes that spawn and you have to choose the coloured box that matches with the given RGB value. You can choose the difficulty of the game, the easier the difficulty, the more lives you get. If you win, the screen will turn green and if you lose the screen will turn red.
+In each game there are 8 coloured boxes that spawn and the player has to choose the coloured box that matches with the given RGB value. The player can choose the difficulty of the game, the easier the difficulty, the more lives they receive. If the player wins, the screen will turn green and if they lose the screen will turn red.
 
 ## Difficulty Levels:
 
